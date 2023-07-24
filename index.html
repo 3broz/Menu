@@ -1,0 +1,508 @@
+﻿<head>
+<meta property="og:url" content="https://3broz.github.io/Menu/ViewMenu.htm" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="3 Broz" />
+<meta property="og:description" content="3 Broz Online Menu" />
+<meta property="og:image" content="https://3broz.github.io/Menu/logo.gif" />
+</head>
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+
+
+function isTouchDevice() {
+  return (('ontouchstart' in window) ||
+     (navigator.maxTouchPoints > 0) ||
+     (navigator.msMaxTouchPoints > 0));
+}
+
+
+function ScrollRemove() {
+
+document.getElementsByClassName("tablinks")[0].click();
+
+
+/* use    (isTouchDevice())    instead but doesn't always work*/
+if (window.matchMedia("(pointer: coarse)").matches) {
+document.getElementById('ALeft').style.visibility = 'hidden';
+document.getElementById('ARight').style.visibility = 'hidden';
+} else {
+
+var style = document.createElement('style');
+style.innerHTML = `
+
+.arrow-right {
+  float:right;
+  width: 0;
+  height: 0; 
+  border-top: 37px solid transparent;
+  border-bottom: 37px solid transparent;
+  border-left: 70px solid grey; 
+}
+.arrow-left {
+  float:left;
+  border-top: 37px solid transparent;
+  border-bottom: 37px solid transparent; 
+  border-right:70px solid grey; 
+}
+  `;
+document.head.appendChild(style);
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+var newwindow
+
+function tidy()
+{
+if (newwindow && !newwindow.closed) { newwindow.close(); }
+}
+
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+
+  return false;  }
+
+function moveNavigation(byX) {
+  var navigation = document.getElementsByClassName("tab")[0];
+  navigation.scrollLeft = navigation.scrollLeft + byX;
+  }
+
+function popup(mylink, windowname) { if (! window.focus)return true; var href;
+if (typeof(mylink) == 'string') href=mylink; else href=mylink.href;
+window.open(href, windowname, 'width=400,height=800,scrollbars=yes'); return false; }
+
+window.onload = ScrollRemove;
+
+</script>
+
+
+
+
+<Style>
+    .tab-navigation {
+  border: 1px solid solid gray;
+}
+/* Style the tab */
+
+/* To Hide Scrollbar in Desktop PC */
+.tab::-webkit-scrollbar { 
+  display: none; 
+}
+
+
+    .tab .imgcss{  
+        animation:scroll 6s linear 0s infinite;  
+    } 
+    .tab .textcss {
+        animation:textScroll 6s linear 0s infinite;  
+    }
+
+
+.tab {
+    overflow-x: Auto;
+    background-color: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    white-space: nowrap;
+    border:solid 0px solid gray;
+    text-align:center;}
+/* Style the buttons that are used to open the tab content */
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+  background-color: #ddd;
+}
+/* Create an active/current tablink class */
+
+.tab button.active {
+  background-color: #ccc;
+}
+/* Style the tab content */
+
+.tabcontent {
+  display: none;
+  padding: 2px 2px;
+  border: 1px solid solid gray;
+  border-top: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.tab-control {
+background-color: #ddd;
+}
+
+.tab button 
+            img {
+                width:100%;
+                height:100%;
+            },
+
+.tab-control {
+background-color: #f1f1f1;
+/* float: left; */
+display: inline-block;
+border:solid 1px solid gray;
+outline: none;
+cursor: pointer;
+padding: 0px 4px;
+transition: 0.3s;
+font-size: 60px;
+}
+
+.tablinks {border-radius: 0px;}
+/* Radius of Curavture at edge*/
+
+</Style>
+
+
+<script>var Currency1 = "$" </script><link rel="icon" type="image/x-icon" href="favicon.ico" > <form><input type="button" value="Main Page" onclick="location.href= '/'; return false;"  style="float: right;height:66; width:250; background-color: rgb(0,0,0); color: RGB(255,243,130); font-size:32pt; font-weight:bold"></form><font face='Book Antiqua' style="color: rgb(254,198,85); font-size: 16pt;">Menu By MyShopPOS <br><a href="https://MyShopPOS.wordpress.com"  target="_blank" rel="noopener noreferrer" style="color: inherit;text-decoration:none; cursor: pointer; cursor: hand;">MyShopPOS.wordpress.com</a>
+<body style="background-color: rgb(0,0,0); color: RGB(255,243,130); "><br> <font style="font-size: 14pt;">2023/07/24 20:37:39
+<title>Menu</title>
+<body style="background-color: rgb(0,0,0); color: rgb(254,198,85); "><table border=0 style='border-width:0; width:100%; cellspacing='0' cellpadding='0'>
+<colgroup><col span='1'><col span='1' style='width: 60%;'><col span='1' style='width: 17%;'></colgroup>
+<tr>
+<td style='border-style: none; border-width: medium'></td>
+<td style='border-style: none; border-width: medium; width:100%'><p align='center'>
+<font face='Book Antiqua'><center>
+<style>
+@media (orientation: landscape) {img {width: 25%;}};
+@media (orientation: portrait) {img {width: 60%;}};
+</style>
+<img src='Logo.gif'  width="40%" alt='Missing Logo' class='center'>
+</center></font>
+<td style='border-style: none; border-width: medium'></td>
+</tr>
+<tr>
+<th style='border-style: none; border-width: medium'></th>
+<th style='border-style: none; border-width: medium'>
+<br><font face='Book Antiqua' style='font-size: 48pt'>Menu</font></th>
+<th style='border-style: none; border-width: medium'></th>
+</tr>
+<tr>
+<td style='border-style: none; border-width: medium'></td>
+<td align='center' style='border-style: none; border-width: medium'>
+<font face='Book Antiqua' style="color: rgb(254,198,85); font-size: 32pt;"><center>Tel 78.968068</font></td>
+<td align='right' style='border-style: none; border-width: medium'>
+</tr>
+</table><br>
+
+    <div class="tab-navigation">
+  <button style="height:0px; background-color:transparent; font-size:0pt" id="ALeft" class="tab-control arrow-left" onclick="moveNavigation(-.8*screen.width)"></button>
+
+  <button style="height:0px; background-color:transparent; font-size:0pt" id="ARight"  class="tab-control arrow-right" onclick="moveNavigation(.8*screen.width)"></button>
+
+<div class="tab">
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Appetiser')"><img src="Menu Photos\Appetiser.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Wraps')"><img src="Menu Photos\Wraps.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Ajin')"><img src="Menu Photos\Ajin.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Baguette')"><img src="Menu Photos\Baguette.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Drinks')"><img src="Menu Photos\Drinks.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Adds')"><img src="Menu Photos\Adds.jpg"  width="100%" height="100%" alt="" /></button>
+</div>
+
+<div id="Appetiser" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(254,198,85); border-collapse:collapse;}</style></head><body style="background-color: rgb(0,0,0); color: rgb(254,198,85); "><table style="width:100%"><font face="Book Antiqua" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Imported Fries<font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">A basket of fries, ultimate crunch and special seasoning<br><br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">3.00 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Small Fries <font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">A basket of fries, ultimate crunch and special seasoning<br><br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">2.00 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Curly fries <font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">Irresistible Curly Fries in a Flavorful box and Special Seasoning<br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">3.50 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Special Fries<font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">Loaded Fries with Mozzarella, Cheddar, Pickles, Bacon, BBQ, Special sauce, and Crispy Chicken strips<br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">6.00 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Cheesy Trio Chicken Box<font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">Crispy Strips Trio with Mozzarella & Pepperoni, Cheddar & bacon, Emmental & turkey <br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">5.00 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Cheese Sticks<font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">Crispy Mozzarella Sticks, Perfectly Golden and Irresistibly Cheesy <br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">4.00 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Cheddar Sticks<font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">Crispy Cheddar Chesse Sticks, a Tangy Delight <br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">4.00 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'></table>
+</div>
+
+<div id="Wraps" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(254,198,85); border-collapse:collapse;}</style></head><body style="background-color: rgb(0,0,0); color: rgb(254,198,85); "><table style="width:100%"><font face="Book Antiqua" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Chicken Wrap<font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">Succulent Chicken, Creamy Ranch, Fresh Tomato, Pickles, crisp red iceberg, and Mozzarella cheese all in One Irresistible Bite <br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">5.00 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">BBQ Wrap<font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">Crispy Chicken with Special Seasoning, Tangy pickles, Juicy Tomatoes, Crisp Iceberg Lettuce, French fries, Irresistible BBQ Sauce, and cheddar cheese <br><br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">5.00 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Premium Wrap<font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">Grilled Premium Beef, Mozzarella Sticks, Cheddar, Emmental, Special Sauce, Caramelized Onion, Grilled Bell Pepper and Mushrooms, Pickles, Sitos Chips, and Sizzling Bacon, all packed Into One Epic Wrap <br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">9.00 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'></table>
+</div>
+
+<div id="Ajin" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(254,198,85); border-collapse:collapse;}</style></head><body style="background-color: rgb(0,0,0); color: rgb(254,198,85); "><table style="width:100%"><font face="Book Antiqua" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Ultimate Ajin<font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">Crispy Chicken, Melting Cheese, Golden French Fries, Succulent Turkey, and Irresistible BBQ sauce, All Wrapped Up for your Ultimate Satisfaction <br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">7.00 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Steak Supreme <font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">Premium Beef, Tangy Vinaigrette sauce, Melted Mozzarella and Emmental Cheese, Grilled Mushrooms and Bell Pepper<br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">8.50 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'></table>
+</div>
+
+<div id="Baguette" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(254,198,85); border-collapse:collapse;}</style></head><body style="background-color: rgb(0,0,0); color: rgb(254,198,85); "><table style="width:100%"><font face="Book Antiqua" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Buffalo Bliss Baguette<font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">Spicy Grilled Chicken, Special Buffalo Sauce, Grilled Bell Pepper and Mushrooms, Fresh Tomatoes, Mouthwatering Mozzarella cheese, and Savory Pepperoni, all in One Irresistible Baguette<br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">7.00 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Verde Delight Baguette<font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">Grilled Chicken, Special Green Sauce, Zesty Pepperoni, Creamy Mozzarella, Fresh Rocca, and Tangy Pickles, All Encased in a Delectable Baguette<br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">7.00 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Philly Steak<font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">Premium Beef, Special Steak Sauce, Grilled Bell Pepper and Mushrooms, Pepperoni, a Medley of Mixed Cheeses, and a Spicy-Sweet Kick of sweet and chili sauce <br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">8.50 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'></table>
+</div>
+
+<div id="Drinks" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(254,198,85); border-collapse:collapse;}</style></head><body style="background-color: rgb(0,0,0); color: rgb(254,198,85); "><table style="width:100%"><font face="Book Antiqua" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Pepsi
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">1.50 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Pepsi Diet
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">1.50 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">7up
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">1.50 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">7up diet
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">1.50 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Mirenda
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">1.50 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Water
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">0.50 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'><div name = "Rim Can" style='display: none;' id="Rim Can73"><button type="button" value = "0.5" name = "Rim Can" id="sub73" class="sub" style='display: none;'>-</button><input type="number" readonly name="-##ItemToOrderQuantity##-" id="Rim Can" value="0" min="0" max="100"  style='display: none;'/><button type="button" name = "" value = "0.5" id="add73" class="add" style='display: none;'>+</button></div></font><font style='font-family:Book Antiqua;font-size:45px;'><div name = "Rim Lemon Can" style='display: none;' id="Rim Lemon Can74"><button type="button" value = "0.5" name = "Rim Lemon Can" id="sub74" class="sub" style='display: none;'>-</button><input type="number" readonly name="-##ItemToOrderQuantity##-" id="Rim Lemon Can" value="0" min="0" max="100"  style='display: none;'/><button type="button" name = "" value = "0.5" id="add74" class="add" style='display: none;'>+</button></div></font><font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Ice Tea Peach
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">1.50 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Ice Tea Peach Diet
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">1.50 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Ice Tea Red Fruits
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">1.50 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Ice Tea Red Fruits Diet
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">1.50 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Ice Tea Lemon
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">1.50 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'><div name = "Sanbenedetto Ice Tea" style='display: none;' id="Sanbenedetto Ice Tea86"><button type="button" value = "1.5" name = "Sanbenedetto Ice Tea" id="sub86" class="sub" style='display: none;'>-</button><input type="number" readonly name="-##ItemToOrderQuantity##-" id="Sanbenedetto Ice Tea" value="0" min="0" max="100"  style='display: none;'/><button type="button" name = "" value = "1.5" id="add86" class="add" style='display: none;'>+</button></div></font><font style='font-family:Book Antiqua;font-size:45px;'><div name = "Sanbenedetto Orange" style='display: none;' id="Sanbenedetto Orange87"><button type="button" value = "1.5" name = "Sanbenedetto Orange" id="sub87" class="sub" style='display: none;'>-</button><input type="number" readonly name="-##ItemToOrderQuantity##-" id="Sanbenedetto Orange" value="0" min="0" max="100"  style='display: none;'/><button type="button" name = "" value = "1.5" id="add87" class="add" style='display: none;'>+</button></div></font><font style='font-family:Book Antiqua;font-size:45px;'><div name = "Sanbenedetto Lemon" style='display: none;' id="Sanbenedetto Lemon88"><button type="button" value = "1.5" name = "Sanbenedetto Lemon" id="sub88" class="sub" style='display: none;'>-</button><input type="number" readonly name="-##ItemToOrderQuantity##-" id="Sanbenedetto Lemon" value="0" min="0" max="100"  style='display: none;'/><button type="button" name = "" value = "1.5" id="add88" class="add" style='display: none;'>+</button></div></font><font style='font-family:Book Antiqua;font-size:45px;'></table>
+</div>
+
+<div id="Adds" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(254,198,85); border-collapse:collapse;}</style></head><body style="background-color: rgb(0,0,0); color: rgb(254,198,85); "><table style="width:100%"><font face="Book Antiqua" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Meal<font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">Small Fries and drink<br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">2.50 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Garlic Mayo Dip<font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">50g of Creamy Zesty, and Perfectly Garlicky, Elevation Evry Bite <br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">0.50 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">BBQ Dip<font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">50g of Smoky, Tangy, and Finger-Lickin`Good.Enhance Your Flavor Experience <br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">0.50 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Cheddar Cheese Dip<font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">50g of Creamy, Cheesy Bliss That Takes Your Tastebuds on a Flavorful Journey<br><br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">0.60 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Ranch Sauce Dip<font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">50g of Cool, Creamy, and Bursting with Flavor. The Perfect Campanion for Your Tasty Treats<br><br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">0.50 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Honey Mustars Dip<font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">50g of A Sweet and Tangy SYmphony that Elevates Every Bite <br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">0.55 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Special Dip Sauce<font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">50g of A Secret Blend of Flavors that Adds a Touch of Magic to Ypur Dish<br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">0.50 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Mozzarella Cheese <font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">Add a Cheesy Touch to Your Life <br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">0.60 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Chadder Cheese <font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">Elevate Your Life With Irresistible Cheddar Cheese Perfection<br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">0.60 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Mix Cheese <font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">Add a Cheesy Touch to Your Life <br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">1.00 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Bacon <font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">Upgrade Your Life With Crispy, Flavorful Bacon<br><br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">1.00 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Pepperoni <font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">A Bold Twist For Your Taste Buds<br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">0.70 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Turkey <font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">Pile on Tender Turkey for a Hearty Sandwich Experience <br><br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">0.70 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Book Antiqua" style="font-size:45px"><p face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:55px;line-height: 90%;">Buffalo <font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:12px;line-height: 50%;"><br>&nbsp<br></font><font face="Book Antiqua" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:36px;line-height: 100%;">A Fiery KIck To Ignite Your Taste Buds<br>
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:Book Antiqua;font-size:45px; text-align:right;vertical-align:top">0.30 $
+</p></td></tr>
+
+<font style='font-family:Book Antiqua;font-size:45px;'></table>
+</div>
+
+
+
